@@ -3,17 +3,18 @@ import java.awt.Graphics;
 
 public class Body {
 	private Point start, centre;
-	private int width, height,speedX,speedY;
+	private int width, height, speedX, speedY;
 	private Color color;
 
-	public Body(int x, int y, int width, int height, Color color,int speedX,int speedY) {
+	public Body(int x, int y, int width, int height, Color color, int speedX,
+			int speedY) {
 		this.start = new Point(x, y);
 		this.width = width;
 		this.height = height;
 		this.color = color;
 		this.centre = new Point(x + (width / 2), y + (height / 2));
-		this.speedX=speedX;
-		this.speedY=speedY;
+		this.speedX = speedX;
+		this.speedY = speedY;
 	}
 
 	public void draw(Graphics g) {
@@ -21,8 +22,9 @@ public class Body {
 		g.setColor(this.color);
 		return;
 	}
-	private void move(){
-		this.start.move(this.speedX,this.speedY);
+
+	private void move() {
+		this.start.move(this.speedX, this.speedY);
 		this.centre.move(this.speedX, this.speedY);
 	}
 
@@ -44,10 +46,12 @@ public class Body {
 	public int getHeight() {
 		return height;
 	}
-	public int getX(){
+
+	public int getX() {
 		return this.start.getX();
 	}
-	public int getY(){
+
+	public int getY() {
 		return this.start.getY();
 	}
 }

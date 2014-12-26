@@ -7,7 +7,7 @@ public class Play {
 		window.setSize(1024, 768);
 		window.setResizable(false);
 		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		GameGraphics panel = new GameGraphics();
+		GameGraphics panel = new GameGraphics(1024, 768);
 		window.setContentPane(panel);
 		window.setVisible(true);
 	}
