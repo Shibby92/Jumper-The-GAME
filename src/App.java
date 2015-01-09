@@ -2,8 +2,7 @@ import javax.swing.JFrame;
 
 
 public class App {
-	public static void main(String[] args) {
-
+	public App(){
 		JFrame window = new JFrame("JUMPER!!");
 		window.setSize(1024, 768);
 		window.setResizable(false);
