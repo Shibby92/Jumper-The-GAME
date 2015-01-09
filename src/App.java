@@ -1,6 +1,7 @@
 import javax.swing.JFrame;
 
-public class Play {
+
+public class App {
 	public static void main(String[] args) {
 
 		JFrame window = new JFrame("JUMPER!!");
@@ -10,5 +11,6 @@ public class Play {
 		GameGraphics panel = new GameGraphics(1024, 768);
 		window.setContentPane(panel);
 		window.setVisible(true);
+		panel.requestFocus(false);
 	}
 }

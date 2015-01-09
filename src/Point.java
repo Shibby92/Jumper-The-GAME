@@ -1,4 +1,12 @@
 public class Point {
+	public void setX(int x) {
+		this.x = x;
+	}
+
+	public void setY(int y) {
+		this.y = y;
+	}
+
 	private int x, y;
 
 	public Point(int x, int y) {
@@ -20,6 +28,11 @@ public class Point {
 		dy = (this.y - other.y) * (this.y - other.y);
 		result = (int) (Math.sqrt(dx + dy));
 		return result;
+	}
+
+	@Override
+	public String toString() {
+		return "Point [x=" + x + ", y=" + y + "]";
 	}
 
 	public void move(int speedX, int speedY) {
